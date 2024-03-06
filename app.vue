@@ -1,14 +1,17 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+    <div>
+        <NuxtWelcome />
+    </div>
 </template>
 
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
 
-console.log(runtimeConfig.secretKey)
-console.log(runtimeConfig.public)
+// if (process.server) {
+//     console.log(runtimeConfig.secretKey)
+// }
+// console.log(runtimeConfig.public)
 
+// console.log(process.env.NXUT_API_SECRET)
 console.log(process.env)
 </script>
