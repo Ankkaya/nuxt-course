@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <NuxtWelcome />
-    </div>
+    <NuxtPage />
 </template>
 
 <script setup lang="ts">
@@ -13,5 +11,9 @@ const runtimeConfig = useRuntimeConfig()
 // console.log(runtimeConfig.public)
 
 // console.log(process.env.NXUT_API_SECRET)
-console.log(process.env)
+// console.log(process.env)
+
+const appConfig = useAppConfig()
+
+console.log(appConfig)
 </script>
